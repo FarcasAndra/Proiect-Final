@@ -88,18 +88,28 @@ header{
     display: none;
 }
 /*Form*/
+
 .form_container{
     position: absolute;
     max-width: 320px;
     width: 100% ;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50);
+    transform: translate(-50%, -50) scale(1.2);
     z-index: 101;
     background: #f1f1f1;
     padding: 25px;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+}
+.home.show .form_container{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50) scale(1);
+
 }
 .form_container h2{
     font-size: 22px;
@@ -153,6 +163,80 @@ header{
     right: 0;
     font-size: 18px;
 }
+.option_field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.form_container a{
+    color: #0b0217;
+    font-size: 12px;
+
+}
+.form_container a:hover {
+    text-decoration: underline;
+}
+.checkbox{
+    display: flex;
+    white-space: nowrap;
+    font-size: 12px;
+    column-gap: 8px;
+}
+.checkbox input{
+    accent-color: #aaaa;
+}
+.checkbox label{
+    font-size: 12px;
+    cursor: pointer;
+    color: #aaa;
+    user-select: none;
+}
+.form_container .button{
+    background: #f1f1f1;
+    margin-top:30px ;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px ;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.login_signup{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+.signup-form{
+    display:none ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-icon{
     display: none;
     flex-direction: column;
