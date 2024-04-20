@@ -101,9 +101,4 @@ menu.onclick = () => {
 }
 
 
-/*Button Sign up*/
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("signupSection").addEventListener("click", function() {
-    window.location.href = "signupSection.html";
-    });
-});
+

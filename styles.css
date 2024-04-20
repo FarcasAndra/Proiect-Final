@@ -491,7 +491,7 @@ font-size: 17px;
 
 
 /* Stilizare formular */
-form {
+.orm-section{
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -516,6 +516,6 @@ form {
     cursor: pointer;
 }
 
-input submit :hover {
+.input .submit :hover {
     background-color: #0056b3;
 }
