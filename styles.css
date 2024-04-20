@@ -42,24 +42,25 @@ header{
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 0;
     border-bottom: 1px solid #e1dbd3;
 }
 .logo{
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     padding: 0 2px;
-    border: 2px solid var(--second-color);
+    border: 1.5px solid var(--second-color);
     font-weight: 500;
     color: var(--bg-color);
     background: var(--text-color);
     text-transform: uppercase;
+    margin-right: 100px;
 }
 .navbar{
     display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
+    align-content: space-around;
+    column-gap: 5rem;
 }
 .nav-link{
     font-size: 0.9rem;
@@ -69,7 +70,7 @@ header{
 }
 .nav-link:hover{
     color: var(--main-color);
-    transition: 0.3s;
+    transition: 0.3s;;
 }
 .sign-up,.mobile-sign-up{
     font-size: 0.9rem;
@@ -489,33 +490,44 @@ font-size: 17px;
 
 
 
-
-/* Stilizare formular */
-.orm-section{
+/*formular*/
+.form-section {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.input {
-    width: 100%;
-    padding: 10px;
+
+/* Stilizare etichete */
+label {
+    display: block;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
-.submit {
+/* Stilizare câmpuri de input */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Stilizare buton de trimitere */
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.input .submit :hover {
+/* Stilizare buton de trimitere la hover */
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
