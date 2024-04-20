@@ -102,36 +102,9 @@ menu.onclick = () => {
 
 
 
-const 
-    formOpenBtn= document.querySelector(".form-open"),
-    home1 = document.querySelector(".home1") ,
-    formContainer = document.querySelector(".form_container"),
-    formCloseBtn = document.querySelector(".form_close"),
-    loginBtn = document.querySelector("#signup"),
-    signupBtn = document.querySelector("#signup"),
-    pwShowHide = document.querySelectorAll(".pw_hide"),
-
-    formOpenBtn.addEventListener("click", () => home1.classList.add("show"))
-    formCloseBtn.addEventListener("click", () => home1.classList.remove("show"))
-
-    signupBtn.addEventListener("click",(e) => {
-        e.preventDefault();
-        formContainer.classList.add("activate");
+/*Button Sign up*/
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("signupButton").addEventListener("click", function() {
+        document.getElementById("home").style.display = "block"; 
     });
-    loginBtn.addEventListener("click",(e) => {
-        e.preventDefault();
-        formContainer.classList.remove("activate");
-    });
-    pwShowHide.forEach(icon =>{
-        icon.addEventListener("click" , () => {
-            let getPwInput = icon.parentElement.querySelector("input");
-            if(getPwInput.type === "password") {
-                getPwInput.type = "text";
-                icon.classList.replace("uil-eye-slash","uil-eye");
-            }else{
-                getPwInput.type = "password";
-                icon.classList.replace("uil-eye","uil-eye-slash");
-            }
-            
-        });
-    });
+});
