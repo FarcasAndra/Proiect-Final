@@ -100,6 +100,8 @@ menu.onclick = () => {
     menu.classList.toggle("move");
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById('signupLink').addEventListener('click', function(event) {
