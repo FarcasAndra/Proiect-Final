@@ -100,5 +100,12 @@ menu.onclick = () => {
     menu.classList.toggle("move");
 }
 
-
-
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('a[href="#signupSection"]').addEventListener('click', function() {
+        if (document.getElementById('signupSection').style.display === 'block') {
+            document.getElementById('signupSection').style.display = 'none';
+        } else {
+            document.getElementById('signupSection').style.display = 'block';
+        }
+    });
+});
