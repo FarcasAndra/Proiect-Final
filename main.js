@@ -101,25 +101,17 @@ menu.onclick = () => {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Afișează formularul la clic pe link-ul "Sign Up"
+    
     document.getElementById('signupLink').addEventListener('click', function(event) {
-        // Oprește comportamentul implicit de urmare a link-ului
+      
         event.preventDefault();
 
-        // Afișează formularul
         document.getElementById('signupSection').style.display = 'block';
     });
-
-    // Manipulează formularul după ce este trimis
     document.getElementById('signupForm').addEventListener('submit', function(event) {
-        // Oprește comportamentul implicit de trimitere a formularului
+
         event.preventDefault();
 
-        // Aici poți adăuga logica pentru trimiterea datelor la server
-
-        // Ascunde formularul după trimitere
         document.getElementById('signupSection').style.display = 'none';
-        
-        // Poți adăuga și un mesaj de mulțumire sau altă acțiune aici
     });
 });
