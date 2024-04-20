@@ -103,7 +103,7 @@ menu.onclick = () => {
 
 /*Button Sign up*/
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("signupButton").addEventListener("click", function() {
-        document.getElementById("home").style.display = "block"; 
+    document.getElementById("signupSection").addEventListener("click", function() {
+        window.location.href = "http://127.0.0.1:5500/.html";
     });
 });
