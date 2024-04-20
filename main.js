@@ -101,7 +101,6 @@ menu.onclick = () => {
 }
 
 
-
 /*Button Sign up*/
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("signupButton").addEventListener("click", function() {
