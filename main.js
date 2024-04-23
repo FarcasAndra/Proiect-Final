@@ -102,18 +102,32 @@ menu.onclick = () => {
 
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
     
-    document.getElementById('signupLink').addEventListener('click', function(event) {
-      
-        event.preventDefault();
+    const modal = document.getElementById("myModal");
 
-        document.getElementById('signupSection').style.display = 'block';
-    });
-    document.getElementById('signupForm').addEventListener('submit', function(event) {
+    // Get the signup link that opens the modal
+    const signup = document.getElementById("signupLink");
 
-        event.preventDefault();
+    // When the user clicks the sign up link, open the modal
+    signup.addEventListener('click', e => {
+        e.preventDefault();
+        modal.style.display = "block";
+    })
 
-        document.getElementById('signupSection').style.display = 'none';
-    });
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.addEventListener('click', _ => {
+        modal.style.display = "none";
+    })
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
